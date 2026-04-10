@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Food Online</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>🍽 Minuman Online</h1>
+    <p>Pesan Minuman dan buah favoritmu</p>
+</header>
+
+<div class="container">
+
+    <div class="card">
+        <img src="img/mango smoothies.jpg" alt="Smoothie Mangga">
+        <h3>Smoothie Mangga</h3>
+        <p class="price">Rp 15.000</p>
+        <button onclick="pesan('Smoothie Mangga',15000)">Pesan</button>
+    </div>
+
+    <div class="card">
+        <img src="img/download (1).jpg" alt="Smoothie Naga">
+        <h3>Smoothie Naga</h3>
+        <p class="price">Rp 15.000</p>
+        <button onclick="pesan('Smoothie Naga',15000)">Pesan</button>
+    </div>
+
+    <div class="card">
+        <img src="img/Guava.jpg" alt="Jus Jambu">
+        <h3>Jus Jambu</h3>
+        <p class="price">Rp 13.000</p>
+        <button onclick="pesan('Jus Jambu',13000)">Pesan</button>
+    </div>
+
+    <div class="card">
+        <img src="img/download (8).jpg" alt="Jus Jeruk">
+        <h3>Jus Jeruk</h3>
+        <p class="price">Rp 13.000</p>
+        <button onclick="pesan('Jus Jeruk',13000)">Pesan</button>
+    </div>
+
+    <div class="card">
+        <img src="img/download (6).jpg" alt="Jus Tomat">
+        <h3>Jus Tomat</h3>
+        <p class="price">Rp 13.000</p>
+        <button onclick="pesan('Jus Tomat',13000)">Pesan</button>
+    </div>
+
+    <div class="card">
+        <img src="img/download (3).jpg" alt="Jus Tomat">
+        <h3>Jus Apell</h3>
+        <p class="price">Rp 13.000</p>
+        <button onclick="pesan('Jus Apell',13000)">Pesan</button>
+    </div>
+
+<div class="card">
+        <img src="img/Avocado Smoothie PNG.jpg" alt="Jus Tomat">
+        <h3>Jus Alpukat</h3>
+        <p class="price">Rp 13.000</p>
+        <button onclick="pesan('Jus Alpukat',13000)">Pesan</button>
+    </div>
+
+    <div class="card">
+        <img src="img/Isolated pineapple juice stock image_ Image of glass - 17285905.jpg" alt="Jus Tomat">
+        <h3>Jus Nanas</h3>
+        <p class="price">Rp 13.000</p>
+        <button onclick="pesan('Jus Nanas',13000)">Pesan</button>
+    </div>
+
+</div>
+
+<body>
+
+<!-- CART (WAJIB PALING ATAS) -->
+<div class="cart-dropdown" id="cartBox">
+    <h3>Keranjang</h3>
+    <div id="cart-items"></div>
+    <p>Total: Rp <span id="total">0</span></p>
+    <button class="checkout" onclick="kirimWA()">Checkout</button>
+</div>
+
+<header class="header">
+    
+    <div class="cart-top" onclick="toggleCart()">
+        🛒
+        <span id="cart-count">0</span>
+    </div>
+</header>
+<!-- SCRIPT WAJIB PALING BAWAH -->
+<script src="javascript.js"></script>
+</body>
+</html>
